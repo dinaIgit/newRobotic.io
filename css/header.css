@@ -1,0 +1,35 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #4e4e4e;
+}
+
+.header__container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.menu__icon {
+  display: none;
+}
+
+.menu__link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 30px;
+}
+
+.menu__link:hover {
+  color: deepskyblue;
+  transition: all .5s ease;
+}
