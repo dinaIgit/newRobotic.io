@@ -1,0 +1,515 @@
+@import 'reset.css';
+@import 'fonts.css';
+@import 'section-1.css';
+@import 'section-2.css';
+@import 'section-3.css';
+@import 'section-4.css';
+
+
+.page {
+  padding: 80px 0 30px 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	color: #4e4e4e;
+  width: 100%;
+  height: 100vh;
+}
+
+.page__section {
+  margin: 0px auto;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+.page__section_1 {
+  background-color: #fff;
+}
+
+.page__section_2 {
+  background-color: #fff;
+}
+
+.page__section_3 {
+  background-color: #fff;
+}
+
+.page__section_4 {
+  background-color: #fff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #4e4e4e;
+}
+
+.header__container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.menu__icon {
+  display: none;
+}
+
+.menu__link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 30px;
+}
+
+.menu__link:hover {
+  color: deepskyblue;
+  transition: all .5s ease;
+}
+
+
+article {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  width: 70%;
+  text-align: left;
+  _border: 1px solid black;
+}
+
+article h5 {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 30px 0;
+}
+
+article h2 {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 30px;
+}
+
+article p {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  word-spacing: 7px;
+  line-height: 25px;
+  padding-bottom: 30px;
+}
+
+article i {
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+button {
+  background-color: #00cccc;
+  border: 0;
+  padding: 15px 20px;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #0f70b7;
+  transition: all .5s ease;
+}
+
+/* ----------------------- */
+body._pc .menu__list>li:hover .menu__sub-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  pointer-events: all;
+}
+
+body._touch .menu__list>li {
+  display: flex;
+  align-items: center;
+}
+
+body._touch .menu__link {
+  flex: 1 1 auto;
+}
+
+body._touch .menu__arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 0px 0px 0px 5px;
+  transition: transform 0.3s ease 0s;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #fff;
+}
+
+body._touch .menu__list>li._active .menu__sub-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  pointer-events: all;
+}
+
+body._touch .menu__list>li._active .menu__arrow {
+  transform: rotate(-180deg);
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+
+  /* Home */
+  .page__home {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background: url(../img/bg01.png) no-repeat;
+    background-position: right top;
+    background-size: cover;
+  }
+
+  .home__left {
+    _border: 1px solid black;
+    width: 80%;
+    height: 30vh;
+  }
+
+  .home__left img {
+    width: 50%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    _border: 1px solid black;
+  }
+
+  .home__right {
+    width: 80%;
+    height: 70vh;
+    background: none;
+    _border: 1px solid black;
+  }
+
+  article {
+    padding-top: 0;
+    padding-left: 10%;
+  }
+
+  .page__robotic-news {
+    flex-direction: column-reverse;
+    background: url(../img/bg-03-right.png) no-repeat;
+    background-size: cover;
+    background-position: right top;
+  }
+
+  .robotic-news__left {
+    width: 100%;
+    height: 65vh;
+    _border: 1px solid black;
+    padding-top: 0;
+  }
+
+  .robotic-news__right {
+    width: 100%;
+    height: 35vh;
+    background: none;
+    align-items: center;
+    text-align: center;
+    _border: 1px solid black;
+  }
+
+  .img-circle {
+    width: 45%;
+  }
+
+  .page__robotic-engineering {
+    background: url(../img/bg-L.png) no-repeat;
+    background-size: cover;
+  }
+
+	.robotic-engineering__left{
+		background: none;
+		width: 30%;
+		_height: 50vh;
+	}
+
+	.robotic-engineering__img{
+		width: 300px;
+		height: 300px;
+	}
+
+	.robotic-engineering__right{
+		width: 60%;
+	}
+	.engineeringArticle{
+		width: 100%;
+		padding-right: 10%;
+	}
+
+}
+
+
+@media (min-width: 915px) {
+  .menu__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__list>li {
+    padding: 10px 0;
+  }
+
+  .menu__sub-list {
+    transform: translate(0px, 10%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+  }
+}
+
+@media (max-width: 915px) {
+  .menu__icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  .menu__icon span,
+  .menu__icon::before,
+  .menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #fff;
+  }
+
+  .menu__icon::before,
+  .menu__icon::after {
+    content: "";
+  }
+
+  .menu__icon::before {
+    top: 0;
+  }
+
+  .menu__icon::after {
+    bottom: 0;
+  }
+
+  .menu__icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+
+  .menu__icon._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+
+  .menu__icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+
+  .menu__icon._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+
+  .menu__body {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 100px 30px 30px 30px;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+  }
+
+  .menu__body._active {
+    left: 0;
+  }
+
+  .menu__body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background-color: #4e4e4e;
+    z-index: 2;
+  }
+
+  .menu__list>li {
+    flex-wrap: wrap;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .menu__list>li:last-child {
+    margin-bottom: 0;
+  }
+
+  .menu__list>li._active .menu__sub-list {
+    display: block;
+  }
+
+  .menu__link {
+    font-size: 24px;
+  }
+
+  .menu__sub-list {
+    position: relative;
+    background-color: #fff;
+    flex: 1 1 100%;
+    margin: 20px 0px 0px 0px;
+    display: none;
+  }
+
+  .menu__sub-link {
+    font-size: 20px;
+    color: #000;
+  }
+
+}
+
+@media (max-width: 600px){
+  .home__right{
+    margin-left: 50px;
+  }
+
+  article h2{
+    font-size: 30px;
+  }
+
+  .page__robotic-engineering{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .robotic-engineering__left{
+    width: 100%;
+    height: 35vh;
+    margin: 0 auto;
+    display: block;
+    _border: 1px solid black;
+  }
+
+  .robotic-engineering__img{
+    width: 230px;
+    height: 230px;
+    margin-bottom: 0;
+    _border: 1px solid black;
+  }
+
+  .robotic-engineering__right{
+    width: 100%;
+    height: 65vh;
+    margin: 0;
+    _border: 1px solid black;
+  }
+}
+
+@media (max-width: 480px){
+  .page{
+    _min-height: 650px;
+  }
+  .page__home{
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .home__left{
+    width: 100%;
+  }
+  .home__left img{
+    width: 80%;
+  }
+
+  .home__right{
+    width: 80%;
+    padding: 0 30px;
+    margin-left: 150px;
+  }
+
+  article{
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  article h2{
+    font-size: 30px;
+  }
+
+  .page__robotic-news{
+    margin-bottom: 30px;
+  }
+
+.robotic-news__left{
+  width: 100%;
+  height: 65vh;
+}
+
+.robotic-news__right{
+  width: 100%;
+  height: 35vh;
+}
+
+.img-circle{width: 80%;}
+
+  .page__robotic-engineering{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .robotic-engineering__left{
+    width: 100%;
+    height: 35vh;
+    margin: 0 auto;
+    display: block;
+    _border: 1px solid black;
+  }
+
+  .robotic-engineering__img{
+    width: 230px;
+    height: 230px;
+    margin-bottom: 0;
+    border: 1px solid black;
+  }
+
+  .robotic-engineering__right{
+    width: 100%;
+    height: 65vh;
+    margin: 0;
+    _border: 1px solid black;
+  }
+  .footer__title h3{
+    font-size: 25px;
+    padding: 0 30px;
+  }
+
+  .text__content p{
+    width: 300px;
+  }
+}
+
